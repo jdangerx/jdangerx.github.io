@@ -17,8 +17,6 @@ make simple 3D modeling _really_ simple.  We've got a few in the
 works. Let's take a look at one that turns your finger drawings into
 real things that you can hold. Its code name is FourthApp.
 
-Its operation is best explained with a few pictures:
-
 First you draw something. It's kind of like Paint. No spray-can, though.
 <!-- ![Make sure it will actually stay together](drawView.jpg) -->
 
@@ -46,27 +44,26 @@ However, the devil is in the details. We tried several different ways
 of making models, which can be lumped into one of two categories:
 path-based and image-based.
 
-We started with a path-based method. It works like this. We can track
-the path the finger traces across the screen. Then we can draw two
-paths on either side. This marks the bottom edges of the model. Then
-we play some connect-the-dots and make the triangles for the bottom
-face. Next we can make a copy of the bottom and move it up to make the
-top face. Finally, we connect the top and bottom faces to each other
-to make the sides. Now we have a 3D model of the drawing!
+We started with a path-based method, which works like this: we track
+the path the finger traces across the screen. Then we draw two paths
+on either side, marking the bottom edges of the model. Then we play
+connect-the-dots and make the triangles for the bottom face. Next we
+make a copy of the bottom and move it up to make the top
+face. Finally, we connect the top and bottom faces to each other to
+make the sides. Ta-da!
 
 This runs into some problems, though, when the path crosses over
 itself. We end up with some triangles inside the model! The internal
-triangles make it hard to tell what's inside and what's outside each
-slice. This really messes with your toolpaths. We decided to try to
-detect the self-intersections. This worked by checking each edge
-against each other edge to see if they crossed. This wasn't a huge
-problem, but when you started drawing complex pictures the brush
-noticeably lagged behind your finger as we checked more and more
-edges.
+triangles make it hard to determine the border of each slice. This
+really messes with your toolpaths. We decided to try to detect the
+self-intersections. This worked by checking each edge against each
+other edge to see if they crossed. This is slow - when you start
+drawing complex pictures, the brush noticeably lags behind your finger
+as we accumulate more edges to check.
 
-After a couple days trying to fix the code we started thinking about
-other approaches. What if we took a screenshot and turned that into a
-3D model? We'd avoid the self-intersecting paths altogether - once you
+While trying to fix the code we started thinking about other
+approaches. What if we took a screenshot and turned that into a 3D
+model? We'd avoid the self-intersecting paths altogether - once you
 have painted an area black, it doesn't matter if you go over it
 again. It will still be black. It will be black until the end-times,
 no matter how many times you draw over it. This was really exciting!
@@ -87,36 +84,34 @@ alleviate these problems, we shrunk down the resolution of the images,
 but ran into another snag: at such low resolutions, the beautiful,
 organic curves (sensuous, even) that people were drawing became jagged
 pixelated blocks. That can be helpful if you are trying to print out
-characters from Super Mario, but that's not exactly what we wanted.
-We tried to find a happy medium between slow and pretty, but it wasn't
+characters from Super Mario, but that's not exactly what we want.  We
+tried to find a happy medium between slow and pretty, but it wasn't
 there.
 
-So we've hacked together another solution. The benefit of the
+Now we've hacked together another solution. The benefit of the
 path-based approach is that the model itself is much smaller and
 simpler; the benefit of the image-based approach is that we don't have
-to deal with self-intersecting curves. This suggests using a hybrid of
-the two. The app sends us a picture of what the user has drawn. Then
+to deal with self-intersecting curves. A hybrid solution gets us both
+of these. The app sends us a picture of what the user has drawn. Then
 we use a nice program called
 [potrace](http://potrace.sourceforge.net/) to trace the edges of the
 drawing. From there, we connect the dots and get a model which is as
 simple and smooth as a path-based one without any of the
 self-intersection issues.
 
-Of course, there's still ways to improve. I'm currently working on an
-extension to this hybrid method which would let you use different
-shades of grey in your drawing to indicate different thicknesses. We
-can trace those edges with potrace to get the profile of each
-slice. We can then stack them on top of each other to create the
-model. This lets you make things that are bumpy on top, and then
-you'd _really_ be getting somewhere.
+Of course, there's still ways to improve. I'm working on an extension
+to this hybrid method that will let you use different shades of grey
+in your drawing to indicate different thicknesses. We can trace those
+edges with potrace to get the profile of each slice. Then we can stack
+them on top of each other to create the model. This lets you make
+things that are bumpy on top. You'd _really_ be getting somewhere.
 
-Something you may have noticed is that we don't need to turn the
-picture into triangles to make toolpaths. All the printer does is fill
-in one horizontal slice of the object and move up, so if we know what
-each slice looks like we can make toolpaths straight from
-that. Luckily, the different levels of grey represent exactly that! So
-instead of stacking the slices on top of each other, turning that
-shape into triangles, then slicing up the triangles again, maybe we
-can skip that middle step. This business of translating between slices
-and triangles gets into deep waters very quickly and deserves its own
-post.
+Astute readers may notice that we don't need to turn the picture into
+triangles to make toolpaths. All the printer does is fill in one
+horizontal slice of the object and move up, so if we know what each
+slice looks like we can make toolpaths straight from that. Luckily,
+the different levels of grey represent exactly that! Instead of
+stacking the slices, turning that into triangles, then slicing up the
+triangles again, we can skip that middle step. This business of
+translating between slices and triangles gets into deep waters very
+quickly, though, and deserves its own post.
