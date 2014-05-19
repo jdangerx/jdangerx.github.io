@@ -14,5 +14,5 @@ I decided that I would make one myself. So for the next week or so, I got a few
 forks every time I went to the dining hall. Some fishing-line and some dremeling ensued, and here is the result!
 
 <center>
-<img src="http://jdangerx.github.io/blog/static/images/tensegrity/tensegrity.jpg" alt="" style="width: 400px;"/>
+<img src="images/tensegrity/tensegrity.jpg" alt="" style="width: 400px;"/>
 </center>
