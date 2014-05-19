@@ -25,27 +25,27 @@ real things that you can hold. Its code name is FourthApp.
 First you draw something. It's kind of like Paint. No spray-can, though.
 
 <center>
-<img src="http://i.imgur.com/3Ve1p3b.jpg" alt="" style="width: 400px;"/>
+<img src="http://i.imgur.com/3Ve1p3b.jpg"  style="width: 400px;"/>
 </center>
 
 Then you hit print preview. We turn it into a 3D model and send it
 back down for your perusal:
 
 <center>
-<img src="http://i.imgur.com/ufGNaMuh.jpg" alt="" style="width: 400px;"/>
+<img src="http://i.imgur.com/ufGNaMuh.jpg"  style="width: 400px;"/>
 </center>
 
 If it turns out satisfactorily you can choose to print your part:
 
 
 <center>
-<img src="http://i.imgur.com/xgTEGdsh.jpg" alt="" style="width: 400px;"/>
+<img src="http://i.imgur.com/xgTEGdsh.jpg"  style="width: 400px;"/>
 </center>
 
 Which ends up looking like this:
 
 <center>
-<img src="http://i.imgur.com/vCxEIl5h.jpg" alt="" style="width: 400px;"/>
+<img src="http://i.imgur.com/vCxEIl5h.jpg"  style="width: 400px;"/>
 </center>
 
 You are, no doubt, curious as to how this all works. I'd love to tell

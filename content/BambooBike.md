@@ -18,13 +18,13 @@ When summer started we bummed for bike parts around Palo Alto.
 Somebody gave us an old frame that had been in a crash.
 
 <center>
-<img src="images/bamboo-bike/broken-frame.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/broken-frame.jpg"  style="width: 400px;"/>
 </center>
 
 We sawed the joints off.
 
 <center>
-<img src="images/bamboo-bike/joints.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/joints.jpg"  style="width: 400px;"/>
 </center>
 
 Then we went to a bamboo garden in the hills and got some bamboo.
@@ -33,7 +33,7 @@ We heat-treated the bamboo, which both dries the bamboo and strengthens it. Then
 we cut it into appropriate lengths and fit them onto the steel joints.
 
 <center>
-<img src="images/bamboo-bike/v01-layout.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/v01-layout.jpg"  style="width: 400px;"/>
 </center>
 
 The bamboo was loose on the steel tubes, so we filled the space with expanding
@@ -44,7 +44,7 @@ The final product had some pretty wonky geometry, which was totally
 different from what we had laid out earlier:
 
 <center>
-<img src="images/bamboo-bike/finished-v01.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/finished-v01.jpg"  style="width: 400px;"/>
 </center>
 
 The bottom bracket holder was very low to the ground, resulting in low ground
@@ -56,7 +56,7 @@ jig the next time around.
 The next summer, having learned many lessons, I built another bike.
 
 <center>
-<img src="images/bamboo-bike/finished-v02.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/finished-v02.jpg"  style="width: 400px;"/>
 </center>
 
 I was happy enough to make an
@@ -67,7 +67,7 @@ I rode this daily for several months, then one day the bottom bracket joint
 snapped as I was crossing a street. So I started thinking about the next one.
 
 <center>
-<img src="images/bamboo-bike/riding-v02.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/riding-v02.jpg"  style="width: 400px;"/>
 </center>
 
 ## v0.3
@@ -75,7 +75,7 @@ snapped as I was crossing a street. So I started thinking about the next one.
 For this one I redid the joints that broke with carbon fiber:
 
 <center>
-<img src="images/bamboo-bike/finished-v03.jpg" alt="" style="width: 400px;"/>
+<img src="images/bamboo-bike/finished-v03.jpg"  style="width: 400px;"/>
 </center>
 
 First I tacked the joints back together. Then I built up the joints with
