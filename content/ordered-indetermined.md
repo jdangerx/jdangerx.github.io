@@ -16,7 +16,7 @@ bouncing rectangles:
 
 <a href="http://www.johnxia.me/ordered_indetermined/juggle.html">
 <img src="http://www.johnxia.me/blog/images/ordered-indetermined/juggle-view.jpg">
-Click for animation...
+<span class="caption">Click for animation...</span>
 </a>
 
 The next idea, which I eventually presented in class, was
@@ -26,5 +26,5 @@ all the workers do is ride elevators all day. I used
 
 <a href="http://www.johnxia.me/ordered_indetermined/elevators.html">
 <img src="http://www.johnxia.me/blog/images/ordered-indetermined/elevatorcorp.jpg">
-Click for animation...
+<span class="caption">Click for animation...</span>
 </a>
