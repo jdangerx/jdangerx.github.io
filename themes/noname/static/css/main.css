@@ -9,11 +9,11 @@ html, body {
     font-size: 30px;
 }
 
-#banner a {
+a {
     color: #222244;
     text-decoration: none;
 }
 
-#banner a:hover {
+a:hover {
     color: #333355;
 }
