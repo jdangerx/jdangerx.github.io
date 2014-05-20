@@ -37,9 +37,7 @@ well I was doubly suprised.
 
 Video:
 
-<div class="vid-wrapper">
 <iframe width="560" height="315" src="//www.youtube.com/embed/yCI13KS8Hrw" frameborder="0" allowfullscreen></iframe>
-</div>
 
 Additional images:
 
