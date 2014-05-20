@@ -2,11 +2,14 @@ Title: Swingy Arm Thing
 Date: 2014-02-07
 Category: not software
 tags: magnets, wood
-status: draft
+slug: swingy-arm-thing
+cover: finished.jpg
 
-I'm in an art class this quarter. This project is called "Module Matters". The
-prompt is to make a reproducible module that can be used as a building block or
-an integral part of a sculpture.
+I was in an art class last quarter, taught by [Hannah Givler](http://www.hannahgivler.com). 
+
+This project is called "Module Matters". The prompt is to make a
+reproducible module that can be used as a building block or an
+integral part of a sculpture.
 
 Initially I was doing a bunch of research on 3-D tiling, but I got distracted by
 magnets and started thinking about cool magnetic things instead. After some
@@ -20,15 +23,13 @@ at the Exploratorium.
 
 I printed out a template from SolidWorks and traced that onto a scrap piece of lauan.
 
-image of template
+<img src="images/swingy-arm-thing/paper-template.jpg"/>
 
-I cut it out with a bandsaw, then sanded it down.
+I cut it out with a bandsaw, then sanded it down.  Then I nailed a few
+pieces of scrap together, using the template as a template, to make a
+quick jig so I can drill holes precisely.
 
-image of lauan
-
-Then I nailed a few pieces of scrap together, using the template as a template,
-to make a quick jig so I can drill holes precisely.
-
+<img src="images/swingy-arm-thing/paper-template.jpg"/>
 image of jig
 
 Then I traced the template 10 times onto a 2'x4' piece of 3/4" plywood, and cut
