@@ -16,7 +16,10 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
 /***** Global *****/
 img{
-	border:double #8A887B;
+    border:double #8A887B;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Body */
 body {

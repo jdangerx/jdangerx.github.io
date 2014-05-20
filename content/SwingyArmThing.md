@@ -18,11 +18,6 @@ it. It's reminiscent of the
 [Magnetic Wave Machine](http://exs.exploratorium.edu/exhibits/magnetic-wave-machine/)
 at the Exploratorium.
 
-<!-- CAD screenshot: -->
-<!-- <center> -->
-<!-- <img src="http://i.imgur.com/3Ve1p3b.jpg" alt="" style="width: 400px;"/> -->
-<!-- </center> -->
-
 I printed out a template from SolidWorks and traced that onto a scrap piece of lauan.
 
 image of template

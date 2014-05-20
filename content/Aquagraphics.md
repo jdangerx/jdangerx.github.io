@@ -3,6 +3,7 @@ Author: John Xia
 Date: 2013-08-15
 Category: not software
 Tags: scav, 3D printing
+status:draft
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/zQqBJ3nv6Ls"
 frameborder="0" allowfullscreen></iframe>

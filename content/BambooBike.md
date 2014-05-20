@@ -2,12 +2,14 @@ Title: Bamboo Bike
 Date: 2013-09-05
 Category: not software
 tags: bicycles
+slug: bamboo-bike
+cover: finished-v02.jpg
 
 In high school I built some bamboo bikes. The second one broke and I rebuilt it.
 
 Here are their stories.
 
-## v0.1
+### v0.1
 
 One day I was biking with my friend Chris. I said to him that we should build a
 bamboo bike in the summer. He said that that was a great idea and that we should
@@ -51,7 +53,7 @@ The bottom bracket holder was very low to the ground, resulting in low ground
 clearance. I had to be very careful to avoid pedal strike. I resolved to use a
 jig the next time around.
 
-## v0.2
+### v0.2
 
 The next summer, having learned many lessons, I built another bike.
 
