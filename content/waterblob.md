@@ -36,9 +36,11 @@ surprising, I thought, so when people thought it had artistic merit as
 well I was doubly suprised.
 
 Video:
+
 <iframe width="560" height="315" src="//www.youtube.com/embed/yCI13KS8Hrw" frameborder="0" allowfullscreen></iframe>
 
-Additgithub.ional images:
+Additional images:
+
 <img src="images/water-blob/long-view.jpg">
 
 <img src="images/water-blob/apparatus.jpg">
