@@ -2,7 +2,7 @@ Title: HvZ Catapult
 Author: John Xia
 Date: 2014-05-20
 slug: hvz-catapult
-cover: catapult-2
+cover: catapult-3.jpg
 
 For my last game of [Humans vs. Zombies](http://www.uchicagohvz.org) I
 decided that I would utilize the least effective strategy possible. I
@@ -23,6 +23,4 @@ I did not kill any zombies with this.
 <img src="http://www.johnxia.me/blog/images/hvz-catapult/catapult-2.jpg"/>
 
 <img src="http://www.johnxia.me/blog/images/hvz-catapult/catapult-3.jpg"/>
-
-<img src="http://www.johnxia.me/blog/images/hvz-catapult/catapult-4.jpg"/>
 
