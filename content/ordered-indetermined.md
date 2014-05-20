@@ -2,7 +2,7 @@ Title: Ordered and Indetermined
 Author: John Xia
 Date: 2014-05-20 11:30
 slug: ordered-indetermined
-cover: juggle-view.jpg
+cover: elevatorcorp.jpg
 
 Another project for my Data and Algorithms in Art class was to make
 something "Ordered and Indetermined." This phrase was pretty much left
@@ -25,6 +25,6 @@ all the workers do is ride elevators all day. I used
 [three.js](http://threejs.org/) to talk to WebGL.
 
 <a href="http://www.johnxia.me/ordered_indetermined/elevators.html">
-<img src="http://www.johnxia.me/blog/images/ordered-indetermined/elevator-corp.jpg">
+<img src="http://www.johnxia.me/blog/images/ordered-indetermined/elevatorcorp.jpg">
 Click for animation...
 </a>
