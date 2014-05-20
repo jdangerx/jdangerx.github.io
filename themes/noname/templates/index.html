@@ -9,7 +9,7 @@
 {% for article in articles_page.object_list %}
   <div class="image-wrapper">
   <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
-    <img src="images/{{ article.slug }}/{{ article.cover }}"/>
+    <img src="{{ SITEURL }}/images/{{ article.slug }}/{{ article.cover }}"/>
   </a>
     <div class="text">{{ article.title|striptags|upper }} </div>
   </div>
