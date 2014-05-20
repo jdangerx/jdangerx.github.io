@@ -1,6 +1,6 @@
 Title: Ordered and Indetermined
 Author: John Xia
-Date: 2013-05-20 11:30
+Date: 2014-05-20 11:30
 slug: ordered-indetermined
 cover: juggle-view.jpg
 
