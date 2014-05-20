@@ -1,19 +1,19 @@
 html, body {
     background: #CCCCCC;
     margin: 5% 10% 5% 10%;
-    font-size: 1.1em;
+    font-size: 1.5vw;
     color: #333333;
     line-height:180%;
 }
 
-h1 {font-size: 1.6em;}
-h2 {font-size: 1.4em;}
-h3 {font-size: 1.2em;}
+h1 {font-size: 2.4vw;}
+h2 {font-size: 2.1w;}
+h3 {font-size: 1.8vw;}
 
-#banner {
+#banner h1 {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif; font-weight:700;
-    font-size: 1.8em;
+    font-size: 4vw;
 }
 
 a {
