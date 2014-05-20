@@ -24,7 +24,7 @@ The next idea, which I eventually presented in class, was
 all the workers do is ride elevators all day. I used
 [three.js](http://threejs.org/) to talk to WebGL.
 
-<a href="http://www.johnxia.me/ordered_indetermined/juggle.html">
-<img src="http://www.johnxia.me/blog/images/ordered-indetermined/juggle-view.jpg">
+<a href="http://www.johnxia.me/ordered_indetermined/elevators.html">
+<img src="http://www.johnxia.me/blog/images/ordered-indetermined/elevator-corp.jpg">
 Click for animation...
 </a>
