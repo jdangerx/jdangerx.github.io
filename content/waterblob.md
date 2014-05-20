@@ -3,7 +3,8 @@ Date: 2014-05-20
 slug: water-blob
 cover: projection-far.JPG
 
-<img src="images/water-blob/projection-far.JPG">
+<img src="images/water-blob/projection-far.JPG"/>
+
 This quarter I am in [Jason Salavon](http://www.salavon.com)'s Data
 and Algorithm in Art class. This is a group project I did with
 [Clare Koury](http://clarekoury.tumblr.com) and Rebeca Carillo.
@@ -11,7 +12,7 @@ and Algorithm in Art class. This is a group project I did with
 We hooked up a PC fan to an Arduino and had it pulse briefly every
 couple seconds. The fan had a magnet attached to it.
 
-<img src="images/water-blob/pool-side.jpg">
+<img src="images/water-blob/pool-side.jpg"/>
 
 On top of the fan we put a CD spindle with some
 [rheoscopic fluid](http://www.instructables.com/id/Making-Rheoscopic-Fluid/?ALLSTEPS)
@@ -19,7 +20,7 @@ in it. To agitate the liquid we used
 [Shapelock](http://shapelock.com/) to encase another magnet. Basically
 we made a magnetic stirrer that only worked part of the time.
 
-<img src="images/water-blob/pool-top.jpg">
+<img src="images/water-blob/pool-top.jpg"/>
 
 Here is a video of me discovering that the fan goes too fast for the
 magnetic coupling. We solved this by pulsing the fan for about 40ms.
