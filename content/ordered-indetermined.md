@@ -15,7 +15,7 @@ blocks. I wondered what it would look like if I just made a ton of
 bouncing rectangles:
 
 <a href="http://www.johnxia.me/ordered_indetermined/juggle.html">
-<img src="http://www.johnxia.me/blog/images/ordered-indetermined/juggle-view.jpg">
+<img src="http://www.johnxia.me/blog/images/ordered-indetermined/juggle-view.jpg" style="width:400px;">
 <div class="caption">Click for animation...</div>
 </a>
 
