@@ -29,20 +29,22 @@ I cut it out with a bandsaw, then sanded it down.  Then I nailed a few
 pieces of scrap together, using the template as a template, to make a
 quick jig so I can drill holes precisely.
 
-<img src="images/swingy-arm-thing/paper-template.jpg"/>
-image of jig
+<img src="images/swingy-arm-thing/lauan-in-jig.jpg"/>
 
 Then I traced the template 10 times onto a 2'x4' piece of 3/4" plywood, and cut
 them all out with a bandsaw.
 
-image of pieces
+<img src="images/swingy-arm-thing/rough-cut.jpg"/>
 
-Then I used the template to route out the pieces smoothly, before putting them
-in the drilling jig to make the pockets for the magnets and bearings.
+Then I used the template to route out the pieces smoothly, before
+putting them in the drilling jig to make the pockets for the magnets
+and bearings.  I used skateboard bearings, because they're cheap and
+easy to find. They take 8mm axles, which is just a smidge bigger than
+the 5/16" threaded rod I used for the axle. The arms were spaced out
+with washers between the bearings and secured with a nut on each end.
 
-image of finished pieces
+I hadn't really thought about how I would mount the piece. After a
+discussion with my professor I decided to cobble together some 2x4's
+and call it a day.
 
-I used skateboard bearings, because they're cheap and easy to find. They take
-8mm axles, which is just a smidge bigger than the 5/16" threaded rod I used for
-the axle. The arms were spaced out with washers between the bearings and secured
-with a nut on each end.
+<img src="images/swingy-arm-thing/finished.jpg"/>
