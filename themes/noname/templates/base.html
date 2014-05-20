@@ -32,8 +32,10 @@
 </head>
 
 <body id="index" class="home">
+<!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" /> -->
+<link rel="stylesheet" type="text/css" href="theme/css/main.css" />
         <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+                <h1><a href="{{ SITEURL }}">{{ SITENAME|upper }} <strong>{{ SITESUBTITLE|lower }}</strong></a></h1>
         </header><!-- /#banner -->
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
