@@ -3,7 +3,7 @@ Date: 2013-08-13
 Category: software
 tags: 3D printing, code
 slug: fourth-app
-cover: part.jpg
+cover: meshlab.jpg
 
 I'm currently an intern at
 [Mission St. Manufacturing](http://www.missionst.com/). We're a 3D
