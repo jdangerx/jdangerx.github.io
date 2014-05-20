@@ -4,16 +4,14 @@
 {% block content_title %}
 <!-- <h2>All articles</h2> -->
 {% endblock %}
-
-<ol id="post-list">
+<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+<section id="post-list">
 {% for article in articles_page.object_list %}
-        <article class="hentry">
-                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                <img src="images/{{ article.slug }}/{{ article.cover }}" style="width: 400px;"/>
-                    </a>
-        </article>
+  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+    <img src="images/{{ article.slug }}/{{ article.cover }}"/>
+  </a>
 {% endfor %}
-</ol><!-- /#posts-list -->
+</section><!-- /#posts-list -->
 {% include 'pagination.html' %}
 </section><!-- /#content -->
 {% endblock content %}
