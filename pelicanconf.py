@@ -24,7 +24,7 @@ TRANSLATION_FEED_ATOM = None
           # ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['/home/john/blog/content/images',]
 SITESUBTITLE= u'A Multimedia Experience'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
