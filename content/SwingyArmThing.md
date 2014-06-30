@@ -43,8 +43,16 @@ easy to find. They take 8mm axles, which is just a smidge bigger than
 the 5/16" threaded rod I used for the axle. The arms were spaced out
 with washers between the bearings and secured with a nut on each end.
 
+Here is some video of the first few arms, hanging out in the joining
+table:
+
+<iframe width="560" height="315"
+src="//www.youtube.com/embed/RuilwwdHYTs?rel=0" frameborder="0"
+allowfullscreen></iframe>
+
 I hadn't really thought about how I would mount the piece. After a
 discussion with my professor I decided to cobble together some 2x4's
-and call it a day.
+and call it a day. I'm not proud of that, but the truth is the truth.
 
 <img src="images/swingy-arm-thing/finished.jpg"/>
+
