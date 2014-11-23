@@ -5,15 +5,17 @@
 {% endblock %}
 
 <link rel="stylesheet" type="text/css" href="theme/css/index.css"/>
-<script type="text/javascript" src="theme/js/masonry.pkgd.min.js"></script>
+<!-- <script type="text/javascript" src="theme/js/masonry.pkgd.min.js"></script> -->
 
 <div id="post-list">
 {% for article in articles_page.object_list %}
   <div class="item">
   <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
-    <img src="{{ SITEURL }}/images/{{ article.slug }}/{{ article.cover }}"/>
+    <!-- <img src="{{ SITEURL }}/images/{{ article.slug }}/{{ article.cover }}"/> -->
+    {{ article.title|striptags|upper }}
   </a>
-    <div class="text">{{ article.title|striptags|upper }}</div>
+  <br>
+    <!-- <div class="text">{{ article.title|striptags|upper }}</div> -->
   </div>
 {% endfor %}
 </div><!-- /#post-list -->

@@ -1,9 +1,10 @@
 html, body {
-    background: #CCCCCC;
+    background: #f5f0e0;
     margin: 5% 10% 5% 10%;
     font-size: 1.5vw;
     color: #333333;
     line-height:180%;
+    font-family: 'EB Garamond', serif;
 }
 
 h1 {font-size: 2.4vw;}
@@ -12,7 +13,6 @@ h3 {font-size: 1.8vw;}
 
 #banner h1 {
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif; font-weight:700;
     font-size: 4vw;
 }
 

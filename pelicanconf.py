@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'John Xia'
-SITENAME = u'John Xia is on the Internet'
+SITENAME = u'No Promises'
 SITEURL = 'http://www.johnxia.me/blog'
 
 TIMEZONE = 'America/Chicago'
@@ -14,6 +14,7 @@ DEFAULT_LANG = u'en'
 FEED_ALL_RSS = "feeds/rss.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+MENUITEMS = [("Articles", "archives.html")]
 
 # Blogroll
 # LINKS =  (('Studio Xia', 'http://www.studioxia.com/'),
@@ -24,10 +25,9 @@ TRANSLATION_FEED_ATOM = None
           # ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
-STATIC_PATHS = ['/home/john/blog/content/images',]
-SITESUBTITLE= u'A Multimedia Experience'
+STATIC_PATHS = ['/home/john/blog/content/images']
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
-THEME = "themes/noname"
+THEME = "themes/simple"
 READERS = {'html': None}
