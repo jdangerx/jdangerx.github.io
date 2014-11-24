@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>No Promises</title><link href="http://www.johnxia.me/" rel="alternate"></link><link href="http://www.johnxia.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.johnxia.me/</id><updated>2014-06-29T00:00:00-05:00</updated><entry><title>Animusic</title><link href="http://www.johnxia.me/animusic.html" rel="alternate"></link><updated>2014-06-29T00:00:00-05:00</updated><author><name>John Xia</name></author><id>tag:www.johnxia.me,2014-06-29:animusic.html</id><summary type="html">&lt;p&gt;This year for the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>No Promises</title><link href="http://www.johnxia.me/" rel="alternate"></link><link href="http://www.johnxia.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.johnxia.me/</id><updated>2014-11-23T00:00:00-06:00</updated><entry><title>The Speed of News</title><link href="http://www.johnxia.me/speed-of-news.html" rel="alternate"></link><updated>2014-11-23T00:00:00-06:00</updated><author><name>John Xia</name></author><id>tag:www.johnxia.me,2014-11-23:speed-of-news.html</id><summary type="html">&lt;p&gt;In college, I was fortunate enough to take a course on Sumerian
+literature from &lt;a href="http://nelc.uchicago.edu/faculty/woods"&gt;Christopher Woods&lt;/a&gt;. We learned, among other
+things, that in ancient Sumeria places that were far away were also
+somehow farther in the past. This is roughly similar to the
+correspondence between space and time which we study in
+relativity. Why did the Sumerians find space-time unification so
+natural? In my &lt;a href="/misc/NEHC_final.pdf"&gt;final paper&lt;/a&gt;, I argued that at the core of both
+conceptions of space-time was the limited speed of information. In
+ancient Sumeria, the speed of information was much slower than the
+speed of light, and thus the time-bending effects of space were more
+evident. Fortunately, Dr. Woods was a physics student in his youth and
+let me get away with writing 10 pages about physics for my
+Civilization Studies course.&lt;/p&gt;
+&lt;p&gt;Several years later and a couple weeks ago, I participated in the
+&lt;a href="https://hack.uchicago.edu"&gt;hack@UChicago&lt;/a&gt; Fall Hackathon on a whim. I was tooting around
+after the workshops, trying to figure out what to make, when I
+remembered that paper.&lt;/p&gt;
+&lt;p&gt;I decided to make a &lt;a href="/relativity"&gt;map&lt;/a&gt; that would let you see what
+sort of news you would be hearing from around the world if news
+traveled at human speeds. The blue (draggable) marker is your current
+location. You can click the map to find the news that you would be
+hearing from there. There's a dropdown menu with different news
+speeds.&lt;/p&gt;
+&lt;p&gt;To make the map, I used a simple &lt;a href="http://leafletjs.com/"&gt;Leaflet&lt;/a&gt; map with a &lt;a href="http://mapbox.com/"&gt;Mapbox&lt;/a&gt;
+tile layer.  I use the Mapbox geocoder to find the location of your
+click; it is, regrettably, of little use outside of the United States
+and southern Canada. I use the &lt;a href="http://developer.nytimes.com/docs/read/article_search_api_v2"&gt;New York Times Article Search API&lt;/a&gt; to
+find news from that location; it has similar regional
+problems. Unfortunately the Google News API was deprecated long ago.&lt;/p&gt;</summary></entry><entry><title>Animusic</title><link href="http://www.johnxia.me/animusic.html" rel="alternate"></link><updated>2014-06-29T00:00:00-05:00</updated><author><name>John Xia</name></author><id>tag:www.johnxia.me,2014-06-29:animusic.html</id><summary type="html">&lt;p&gt;This year for the
 &lt;a href="http://scavhunt.uchicago.edu/list2014_2final.pdf"&gt;Scavenger Hunt&lt;/a&gt; I
 mostly worked on this item:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;49. Bring us an Animusic-style instrument that plays itself. Once
