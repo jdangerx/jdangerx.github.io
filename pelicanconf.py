@@ -21,7 +21,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 DEFAULT_PAGINATION = 10
 ARTICLE_PATHS = ['blog']
-STATIC_PATHS = ['images', 'pages', 'theme']
+STATIC_PATHS = ['images']
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
