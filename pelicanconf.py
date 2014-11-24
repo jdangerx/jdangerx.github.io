@@ -14,11 +14,14 @@ DEFAULT_LANG = u'en'
 FEED_ALL_RSS = "feeds/rss.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-MENUITEMS = [("Articles", "archives.html")]
+MENUITEMS = [("Projects", "/index.html"), ("Articles", "/archives.html"),
+             ("About", "/pages/about.html")]
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Blogroll
-# LINKS =  (('Studio Xia', 'http://www.studioxia.com/'),
-          # ,)
+# LINKS = (('Studio Xia', 'http://www.studioxia.com/'),)
+
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
@@ -27,7 +30,7 @@ MENUITEMS = [("Articles", "archives.html")]
 DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['/home/john/blog/content/images']
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
-THEME = "themes/simple"
+THEME = "themes/dimple"
 READERS = {'html': None}
