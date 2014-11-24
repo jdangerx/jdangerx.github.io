@@ -1,7 +1,0 @@
-*.pid
-*.pyc
-*.swp
-*.*~
-output/
-cache/
-#*.*#
