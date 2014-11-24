@@ -19,18 +19,11 @@ MENUITEMS = [("Projects", "/index.html"), ("Articles", "/archives.html"),
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-# Blogroll
-# LINKS = (('Studio Xia', 'http://www.studioxia.com/'),)
-
-
-# Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-          # ('Another social link', '#'),)
-
 DEFAULT_PAGINATION = 10
-STATIC_PATHS = ['/home/john/blog/content/images']
+ARTICLE_PATHS = ['blog']
+STATIC_PATHS = ['images', 'pages', 'theme']
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 THEME = "themes/dimple"
 READERS = {'html': None}
