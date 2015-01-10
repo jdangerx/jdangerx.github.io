@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>No Promises</title><link href="http://www.johnxia.me/" rel="alternate"></link><link href="http://www.johnxia.me/feeds/john-xia.atom.xml" rel="self"></link><id>http://www.johnxia.me/</id><updated>2014-11-30T00:00:00-06:00</updated><entry><title>Let's Read Principles of Planetary Climate, Chapter 1</title><link href="http://www.johnxia.me/lets-read-principles-of-planetary-climate-chapter-1.html" rel="alternate"></link><updated>2014-11-30T00:00:00-06:00</updated><author><name>John Xia</name></author><id>tag:www.johnxia.me,2014-11-30:lets-read-principles-of-planetary-climate-chapter-1.html</id><summary type="html">&lt;p&gt;I bought a textbook called &lt;a href="http://www.amazon.com/gp/product/0521865565/"&gt;&lt;em&gt;Principles of Planetary Climate&lt;/em&gt;&lt;/a&gt;, by
+<feed xmlns="http://www.w3.org/2005/Atom"><title>No Promises</title><link href="http://www.johnxia.me/" rel="alternate"></link><link href="http://www.johnxia.me/feeds/john-xia.atom.xml" rel="self"></link><id>http://www.johnxia.me/</id><updated>2015-01-10T00:00:00-06:00</updated><entry><title>Principles of Planetary Climate, Chapter 1 Workbook</title><link href="http://www.johnxia.me/principles-of-planetary-climate-chapter-1-workbook.html" rel="alternate"></link><updated>2015-01-10T00:00:00-06:00</updated><author><name>John Xia</name></author><id>tag:www.johnxia.me,2015-01-10:principles-of-planetary-climate-chapter-1-workbook.html</id><summary type="html">&lt;script type="text/javascript"&gt;
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://www.johnxiaisontheinter.net/planetaryclimate/ch1.html');
+xhr.onload = function() {
+    document.getElementById("content").innerHtml=("hi");
+};
+xhr.send();
+&lt;/script&gt;</summary></entry><entry><title>Let's Read Principles of Planetary Climate, Chapter 1</title><link href="http://www.johnxia.me/lets-read-principles-of-planetary-climate-chapter-1.html" rel="alternate"></link><updated>2014-11-30T00:00:00-06:00</updated><author><name>John Xia</name></author><id>tag:www.johnxia.me,2014-11-30:lets-read-principles-of-planetary-climate-chapter-1.html</id><summary type="html">&lt;p&gt;I bought a textbook called &lt;a href="http://www.amazon.com/gp/product/0521865565/"&gt;&lt;em&gt;Principles of Planetary Climate&lt;/em&gt;&lt;/a&gt;, by
 &lt;a href="http://geosci.uchicago.edu/~rtp1/"&gt;Raymond Pierrehumbert&lt;/a&gt;. It seems pretty interesting and I am going
 to write some sparse notes on the chapters as I go through. It's like
 live-blogging. I am live-blogging a textbook. I hope this is

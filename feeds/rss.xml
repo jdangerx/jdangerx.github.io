@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>No Promises</title><link>http://www.johnxia.me/</link><description></description><atom:link href="http://www.johnxia.me/feeds/rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 30 Nov 2014 00:00:00 -0600</lastBuildDate><item><title>Let's Read Principles of Planetary Climate, Chapter 1</title><link>http://www.johnxia.me/lets-read-principles-of-planetary-climate-chapter-1.html</link><description>&lt;p&gt;I bought a textbook called &lt;a href="http://www.amazon.com/gp/product/0521865565/"&gt;&lt;em&gt;Principles of Planetary Climate&lt;/em&gt;&lt;/a&gt;, by
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>No Promises</title><link>http://www.johnxia.me/</link><description></description><atom:link href="http://www.johnxia.me/feeds/rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 10 Jan 2015 00:00:00 -0600</lastBuildDate><item><title>Principles of Planetary Climate, Chapter 1 Workbook</title><link>http://www.johnxia.me/principles-of-planetary-climate-chapter-1-workbook.html</link><description>&lt;script type="text/javascript"&gt;
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://www.johnxiaisontheinter.net/planetaryclimate/ch1.html');
+xhr.onload = function() {
+    document.getElementById("content").innerHtml=("hi");
+};
+xhr.send();
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">John Xia</dc:creator><pubDate>Sat, 10 Jan 2015 00:00:00 -0600</pubDate><guid>tag:www.johnxia.me,2015-01-10:principles-of-planetary-climate-chapter-1-workbook.html</guid></item><item><title>Let's Read Principles of Planetary Climate, Chapter 1</title><link>http://www.johnxia.me/lets-read-principles-of-planetary-climate-chapter-1.html</link><description>&lt;p&gt;I bought a textbook called &lt;a href="http://www.amazon.com/gp/product/0521865565/"&gt;&lt;em&gt;Principles of Planetary Climate&lt;/em&gt;&lt;/a&gt;, by
 &lt;a href="http://geosci.uchicago.edu/~rtp1/"&gt;Raymond Pierrehumbert&lt;/a&gt;. It seems pretty interesting and I am going
 to write some sparse notes on the chapters as I go through. It's like
 live-blogging. I am live-blogging a textbook. I hope this is
