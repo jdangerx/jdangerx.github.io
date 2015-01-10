@@ -105,6 +105,10 @@ footer {
     color: #666666;
 }
 
-iframe img {
-    width: 100%
+/* ipynb stuff */
+.highlight, code {
+    width: 100;
+    font-size: 0.7em;
+    background-color: #f9f9f9;
+    overflow: auto;
 }
