@@ -1,0 +1,4 @@
+languageCode = "en-us"
+title = "DAZHOME"
+baseURL = "http://jdangerx.github.io/"
+theme = "hucore"
