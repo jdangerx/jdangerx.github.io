@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DAZHOME</title>
-    <link>http://jdangerx.github.io/index.xml</link>
-    <description>Recent content on DAZHOME</description>
+    <title>DAZ.ZONE</title>
+    <link>http://www.daz.zone/</link>
+    <description>Recent content on DAZ.ZONE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Mar 2017 09:17:36 -0400</lastBuildDate>
-    <atom:link href="http://jdangerx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.daz.zone/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>one</title>
-      <link>http://jdangerx.github.io/blog/one/</link>
+      <link>http://www.daz.zone/blog/one/</link>
       <pubDate>Tue, 28 Mar 2017 09:17:36 -0400</pubDate>
       
-      <guid>http://jdangerx.github.io/blog/one/</guid>
-      <description>&lt;p&gt;ey its ya boi chachi!&lt;/p&gt;
-</description>
+      <guid>http://www.daz.zone/blog/one/</guid>
+      <description>ey its ya boi chachi!</description>
     </item>
     
   </channel>
