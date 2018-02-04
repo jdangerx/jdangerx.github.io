@@ -28,7 +28,7 @@ def render(source_fp, template_fp):
 def argparser():
     parser = argparse.ArgumentParser(description="Slot Markdown into some HTML.")
     parser.add_argument("source")
-    parser.add_argument("--template", default="blog_template.html")
+    parser.add_argument("--template", default="template.html")
 
     return parser
 
