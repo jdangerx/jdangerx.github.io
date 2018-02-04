@@ -15,9 +15,9 @@ def render(source_fp, template_fp):
         source = f.read()
     with open(template_fp) as f:
         template = f.read()
-    match = re.search(r"#+ .+\n", source)
+    match = re.search(r"#+ (.+)\n", source)
     if match:
-        title = match[0].strip()
+        title = match[1].strip()
     else:
         title = "DAZ.ZONE"
     render_params = {"title": title, "md_src": source}
