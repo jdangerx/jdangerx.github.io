@@ -1,0 +1,14 @@
+#scroll a {
+  text-decoration: none;
+  color: black;
+}
+#scroll a:visited {
+  color: black;
+}
+#scroll a:hover {
+  color: blue;
+}
+#scroll .false:hover {
+  color: blue;
+  cursor: pointer;
+}
