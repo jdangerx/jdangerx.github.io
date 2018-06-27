@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/haagen_daz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.daz.zone
+  * I am haagen_daz (https://keybase.io/haagen_daz) on keybase.
+  * I have a public key ASBGBXtCZmfFx5emDrRhO8lOwotq0HQcPQ2mxuHrnpx75Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012046057b426667c5c797a60eb4613bc94ec28b6ad0741c3d0da6c6e1eb9e9c7be50a",
+      "host": "keybase.io",
+      "kid": "012046057b426667c5c797a60eb4613bc94ec28b6ad0741c3d0da6c6e1eb9e9c7be50a",
+      "uid": "59daa55d943db3c23aaa1913bf80b519",
+      "username": "haagen_daz"
+    },
+    "merkle_root": {
+      "ctime": 1530112107,
+      "hash": "327fbe1308e86887c872df5a15106aecf59b40c56a89ec939c7fd0514d3abe03c4bf430abada019f62df3c6d3077a1e65a5fd105cb196bb58d817049546d73a2",
+      "hash_meta": "d77627c067e977268dd27f76c7b6a1d114c663f206170a8ee8c01525098dd5bd",
+      "seqno": 3154969
+    },
+    "service": {
+      "entropy": "TN2KcaJqlw0GX+/7uzlhYD/1",
+      "hostname": "www.daz.zone",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.1.2"
+  },
+  "ctime": 1530112116,
+  "expire_in": 504576000,
+  "prev": "2ed388fa95bafc0bde6bc8970f1b74f7a9b55517109014ccbace248a48676811",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRgV7QmZnxceXpg60YTvJTsKLatB0HD0Npsbh656ce+UKp3BheWxvYWTESpcCB8QgLtOI+pW6/Avea8iXDxt096m1VRcQkBTMus4kikhnaBHEIA77DdqrdNq41jRFK29u/Lmba4ngAFwB+d4Vqx1SeFP+AgHCo3NpZ8RAHjr1ukPzoKMKHo0HtxAlbqkNLQ1DXT3YoLkaeuFolPtKtk9yOM2JFI5H5emBTesRp+amcI+KT8eOFfRCszGmDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJJaQTBAbKjNXD8Jd8KlNESMZpvdoZj9nDYCli5yfNMQo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/haagen_daz
+
+==================================================================
