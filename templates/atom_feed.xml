@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>DAZ.ZONE</title>
+  <link href="http://www.daz.zone/blog"/>
+  <updated>{generated_time}</updated>
+  <author>
+    <name>Dazhong Xia</name>
+  </author>
+  <id>http://www.daz.zone</id>
+  <subtitle>DAZ dot ZONE</subtitle>
+
+  {entries}
+</feed>

@@ -1,0 +1,7 @@
+<entry>
+  <title>{title}</title>
+  <link href="http://www.daz.zone/blog/{basename}.html"/>
+  <id>urn:uuid:{uuid}</id>
+  <updated>{ctime:%Y-%m-%dT%H:%M:%S}</updated>
+  <summary>{summary}</summary>
+</entry>

@@ -5,6 +5,7 @@ from datetime import datetime
 import os
 import re
 import sys
+import uuid
 
 def read_source(filepath):
     with open(filepath) as f:
@@ -23,13 +24,20 @@ def get_info(source_fp):
     with open(source_fp) as f:
         source = f.read()
     title = get_title(source)
-    mtime = os.path.getmtime(source_fp)
+    ctime = os.path.getctime(source_fp)
     basename, _ext = os.path.splitext(os.path.basename(source_fp))
+    title_start = source.find(title)
+    if title_start == -1:
+        body_start = 0
+    else:
+        body_start = title_start + len(title)
+    summary = " ".join(source[body_start:body_start + 140].strip().split()[:-1])
     return {
         "title": title,
-        "mtime": datetime.fromtimestamp(mtime),
+        "ctime": datetime.fromtimestamp(ctime),
         "basename": basename,
-        "md": source
+        "md": source,
+        "summary": "{}...".format(summary)
     }
 
 
@@ -42,7 +50,7 @@ def render(source, template):
 
 def make_index(infos, template):
     post_list = [
-         "{mtime:%B %-d, %Y} - [{title}](/blog/{basename}.html)"
+         "{ctime:%B %-d, %Y} - [{title}](/blog/{basename}.html)"
         .format(**info) for info in infos
     ]
 
@@ -50,8 +58,14 @@ def make_index(infos, template):
     return render(index_md, template)
 
 
-def make_feed(infos):
-    return "ah"
+def make_feed(infos, entry_template, feed_template):
+    generated_time = "{:%Y-%m-%dT%H:%M:%S}".format(datetime.now())
+    entries = [entry_template.format(uuid=uuid.uuid4(), **i) for i in infos]
+    feed = feed_template.format(
+        generated_time=generated_time,
+        entries="\n".join(entries)
+    )
+    return feed
 
 
 def regenerate_all(src_dir="src/posts", out_dir="blog", template_fp="template.html"):
@@ -62,28 +76,38 @@ def regenerate_all(src_dir="src/posts", out_dir="blog", template_fp="template.ht
     with open(template_fp) as f:
         template = f.read()
 
+    with open("templates/atom_feed.xml") as f:
+        feed_template = f.read()
+
+    with open("templates/atom_entry.xml") as f:
+        entry_template = f.read()
+
     is_md = lambda f: os.path.isfile(os.path.abspath(f)) and os.path.splitext(f)[1] == ".md"
 
     dirname, _subdirs, files = os.walk(src_dir).next()  # no subdirs
     has_dir = [os.path.join(dirname, f) for f in files]
     srcs = [f for f in has_dir if is_md(f)]
-    infos = sorted([get_info(s) for s in srcs], key=lambda i: i["mtime"], reverse=True)
+    infos = sorted([get_info(s) for s in srcs], key=lambda i: i["ctime"], reverse=True)
 
+    print("Found posts:\n\n{}\n".format("\n".join(i["basename"] for i in infos)))
     index_html = make_index(infos, template)
-    with open(os.path.join(out_dir, "index.html"), "w") as f:
+    index_path =os.path.join(out_dir, "index.html")
+    print("Writing index to {}...".format(index_path))
+    with open(index_path, "w") as f:
         f.write(index_html)
 
-    atom_xml = make_feed(infos)
-    with open(os.path.join(out_dir, "atom-feed.xml"), "w") as f:
+    atom_xml = make_feed(infos, entry_template, feed_template)
+    feed_path = os.path.join(out_dir, "feed", "atom_feed.xml")
+    print("Writing feed to {}...".format(feed_path))
+    with open(feed_path, "w") as f:
         f.write(atom_xml)
-
     for info in infos:
-        html = render(info["md"], template)
+            html = render(info["md"], template)
 
-        out_file = os.path.join(out_dir, "{}.html".format(info["basename"]))
-        print("Writing to {}...".format(out_file))
-        with open(out_file, "w") as f:
-            f.write(html)
+            out_file = os.path.join(out_dir, "{}.html".format(info["basename"]))
+            print("Writing to {}...".format(out_file))
+            with open(out_file, "w") as f:
+                f.write(html)
     print("Done!")
 
 
