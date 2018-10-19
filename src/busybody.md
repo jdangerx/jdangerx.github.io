@@ -6,7 +6,7 @@ which case you'll see a little event that just says "busy":
 
 ![Image contents: an unadulterated private Google Calendar event. It just says "busy".](/static/img/normal-busy.png)
 
-As a joke art project, I decided to write a small browser extension
+As ~~a joke~~ an art project, I decided to write a small browser extension
 that makes it so that all events on your Google Calendar show up as
 "busy":
 
