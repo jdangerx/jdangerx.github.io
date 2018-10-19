@@ -1,3 +1,3 @@
 # DAZ.ZONE ARCHIVE
 
-Feb 4, 2018 [Test article](/blog/test-article.html)
+Oct 19, 2018 [Writing a small browser extension](/blog/busybody.html)
