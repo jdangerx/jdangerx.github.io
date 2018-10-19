@@ -67,7 +67,7 @@ def regenerate_all(src_dir="src/posts", out_dir="blog", template_fp="template.ht
     dirname, _subdirs, files = os.walk(src_dir).next()  # no subdirs
     has_dir = [os.path.join(dirname, f) for f in files]
     srcs = [f for f in has_dir if is_md(f)]
-    infos = sorted([get_info(s) for s in srcs], key=lambda i: i["mtime"])
+    infos = sorted([get_info(s) for s in srcs], key=lambda i: i["mtime"], reverse=True)
 
     index_html = make_index(infos, template)
     with open(os.path.join(out_dir, "index.html"), "w") as f:
