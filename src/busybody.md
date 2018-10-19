@@ -20,11 +20,11 @@ During the process, I learned a bunch of things:
 * ARIA roles are rad!!
 * The difference between the `interactive` and `complete` loading states
 
-It was really helpful to know that the Calendar Merge extension exists
-and works. Unlike mine, it makes your calendar easier to use by
-messing with the event display. This gave me faith that my idea was
-doable, and reading the source helped me find a workable approach,
-which I shall detail forthwith.
+It was really helpful to know that the [Calendar
+Merge](https://github.com/imightbeamy/gcal-multical-event-merge) extension
+exists and works. Unlike mine, it makes your calendar easier to use by messing
+with the event display. This gave me faith that my idea was doable, and reading
+the source helped me find a workable approach, which I shall detail forthwith.
 
 Okay. So we want to grab all the events displayed on your calendar,
 and replace their wonderful descriptive titles with "busy." Because
