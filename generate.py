@@ -24,11 +24,14 @@ def render(source_fp, template_fp):
     html = template.format(**render_params)
     return html
 
+def regenerate_all():
+    print("Definitely doing this and not nothing.")
 
 def argparser():
     parser = argparse.ArgumentParser(description="Slot Markdown into some HTML.")
-    parser.add_argument("source")
+    parser.add_argument("-s", "--source")
     parser.add_argument("--template", default="template.html")
+    parser.add_argument("-a", "--all", action="store_true")
 
     return parser
 
@@ -36,5 +39,8 @@ def argparser():
 if __name__ == "__main__":
     parser = argparser()
     args = parser.parse_args()
-    rendered = render(args.source, args.template)
-    sys.stdout.write(rendered)
+    if args.all:
+        regenerate_all()
+    else:
+        rendered = render(args.source, args.template)
+        sys.stdout.write(rendered)
