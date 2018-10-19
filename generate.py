@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 import argparse
+import os
 import re
 import sys
 
@@ -24,8 +25,29 @@ def render(source_fp, template_fp):
     html = template.format(**render_params)
     return html
 
-def regenerate_all():
-    print("Definitely doing this and not nothing.")
+
+def regenerate_all(src_dir="src", out_dir="blog", template="template.html"):
+    src_dir = "src"
+    out_dir = "blog"
+    if not os.path.isdir(src_dir):
+        msg = "{} is not a directory!".format(os.path.abspath(src_dir))
+        raise RuntimeError(msg)
+
+    is_md = lambda f: os.path.isfile(os.path.abspath(f)) and os.path.splitext(f)[1] == ".md"
+
+    dirname, _subdirs, files = os.walk(src_dir).next()  # no subdirs
+    has_dir = [os.path.join(dirname, f) for f in files]
+    srcs = [f for f in has_dir if is_md(f)]
+
+    for src in srcs:
+        basename, _ext = os.path.splitext(os.path.basename(src))
+        out_file = os.path.join(out_dir, "{}.html".format(basename))
+        html = render(src, template)
+        print("Writing to {}...".format(out_file))
+        with open(out_file, "w") as f:
+            f.write(html)
+    print("Done!")
+
 
 def argparser():
     parser = argparse.ArgumentParser(description="Slot Markdown into some HTML.")
