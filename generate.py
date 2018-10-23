@@ -49,7 +49,7 @@ def make_index(with_metadata, template):
         .format(**info) for info in with_metadata
     ]
 
-    index_md = "# DAZ.ZONE ARCHIVE\n\n{}\n".format("\n".join(post_list))
+    index_md = "# DAZ.ZONE ARCHIVE\n\n{}\n".format("\n<br>\n".join(post_list))
     return render(index_md, template)
 
 

@@ -3,7 +3,7 @@
 
   <title>DAZ.ZONE</title>
   <link href="http://www.daz.zone/blog"/>
-  <updated>2018-10-23T11:27:38</updated>
+  <updated>2018-10-23T12:02:33</updated>
   <author>
     <name>Dazhong Xia</name>
   </author>
@@ -11,6 +11,14 @@
   <subtitle>DAZ dot ZONE</subtitle>
 
   <entry>
+  <title>Rolling your own static site generator</title>
+  <link href="http://www.daz.zone/blog/generate.html"/>
+  <id>md5:192b534505ea409a01186373a20241ca</id>
+  <updated>2018-10-23T12:02:30</updated>
+  <summary>Static site generators are cool! I think they're a great way to put stuff on the internet, especially if you're not feeling the whole...</summary>
+</entry>
+
+<entry>
   <title>Writing a small browser extension</title>
   <link href="http://www.daz.zone/blog/busybody.html"/>
   <id>md5:d122831615d00bf673307ccb1cd8c305</id>
