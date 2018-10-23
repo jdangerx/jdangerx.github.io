@@ -44,7 +44,7 @@ client-side, and have some library in the browser render it to
 something prettier. This has a couple benefits: it fails gracefully -
 if someone wants to look at the site through `lynx` they can - and,
 more importantly, means that I don't have to do any Markdown-specific
-work on the backend. I just dump the source into a `<pre>` tag and
+work on the backend. I just dump the source into a `pre` tag and
 call it a day.
 
 Next, all of the templating is done with Python format strings. This
@@ -52,7 +52,7 @@ one is pretty fun. For example, here's my Atom entry template:
 
 ```xml
 <entry>
-  <title>{title}</title>
+<title>{title}</title>
   <link href="http://www.daz.zone/blog/{basename}.html"/>
   <id>md5:{md5}</id>
   <updated>{ctime:%Y-%m-%dT%H:%M:%S}</updated>
