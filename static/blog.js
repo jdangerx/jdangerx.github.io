@@ -4,7 +4,7 @@ function render() {
   const content = document.getElementById("content");
   const mdSrc = document.getElementById("md-src");
 
-  const mdRendered = md.render(mdSrc.innerText);
+  const mdRendered = md.render(mdSrc.innerHTML);
   content.innerHTML = mdRendered;
   content.style = "";
 }

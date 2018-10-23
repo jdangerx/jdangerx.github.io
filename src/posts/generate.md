@@ -64,7 +64,6 @@ involved if you need to repeat a section:
 #   {entries}
 # </feed>
 
-
 def make_feed(with_metadata, entry_template, feed_template):
     generated_time = "{:%Y-%m-%dT%H:%M:%S}".format(datetime.now())
     entries = [
