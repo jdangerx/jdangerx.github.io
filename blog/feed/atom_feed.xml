@@ -3,7 +3,7 @@
 
   <title>DAZ.ZONE</title>
   <link href="http://www.daz.zone/blog"/>
-  <updated>2018-10-19T18:20:25</updated>
+  <updated>2018-10-23T11:27:38</updated>
   <author>
     <name>Dazhong Xia</name>
   </author>
@@ -13,7 +13,7 @@
   <entry>
   <title>Writing a small browser extension</title>
   <link href="http://www.daz.zone/blog/busybody.html"/>
-  <id>urn:uuid:8faacd82-00db-475c-9b5b-6c3cb26ae36c</id>
+  <id>md5:d122831615d00bf673307ccb1cd8c305</id>
   <updated>2018-10-19T17:38:19</updated>
   <summary>When someone shares their Google Calendar with you but wants to hide some details of an event from you, they can set it to 'private.' In...</summary>
 </entry>

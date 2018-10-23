@@ -2,15 +2,10 @@
 
 import argparse
 from datetime import datetime
+import md5
 import os
 import re
 import sys
-import uuid
-
-def read_source(filepath):
-    with open(filepath) as f:
-        source = f.read()
-    return source
 
 
 def get_title(md):
@@ -20,7 +15,7 @@ def get_title(md):
     return "DAZ.ZONE"
 
 
-def get_info(source_fp):
+def get_file_metadata(source_fp):
     with open(source_fp) as f:
         source = f.read()
     title = get_title(source)
@@ -48,19 +43,22 @@ def render(source, template):
     return html
 
 
-def make_index(infos, template):
+def make_index(with_metadata, template):
     post_list = [
          "{ctime:%B %-d, %Y} - [{title}](/blog/{basename}.html)"
-        .format(**info) for info in infos
+        .format(**info) for info in with_metadata
     ]
 
     index_md = "# DAZ.ZONE ARCHIVE\n\n{}\n".format("\n".join(post_list))
     return render(index_md, template)
 
 
-def make_feed(infos, entry_template, feed_template):
+def make_feed(with_metadata, entry_template, feed_template):
     generated_time = "{:%Y-%m-%dT%H:%M:%S}".format(datetime.now())
-    entries = [entry_template.format(uuid=uuid.uuid4(), **i) for i in infos]
+    entries = [
+        entry_template.format(md5=md5.md5(entry["title"]).hexdigest(), **entry)
+        for entry in with_metadata
+    ]
     feed = feed_template.format(
         generated_time=generated_time,
         entries="\n".join(entries)
@@ -68,41 +66,36 @@ def make_feed(infos, entry_template, feed_template):
     return feed
 
 
-def regenerate_all(src_dir="src/posts", out_dir="blog", template_fp="template.html"):
+def regenerate_all(src_dir, out_dir, post_template, feed_template, entry_template):
     if not os.path.isdir(src_dir):
         msg = "{} is not a directory!".format(os.path.abspath(src_dir))
         raise RuntimeError(msg)
-
-    with open(template_fp) as f:
-        template = f.read()
-
-    with open("templates/atom_feed.xml") as f:
-        feed_template = f.read()
-
-    with open("templates/atom_entry.xml") as f:
-        entry_template = f.read()
 
     is_md = lambda f: os.path.isfile(os.path.abspath(f)) and os.path.splitext(f)[1] == ".md"
 
     dirname, _subdirs, files = os.walk(src_dir).next()  # no subdirs
     has_dir = [os.path.join(dirname, f) for f in files]
-    srcs = [f for f in has_dir if is_md(f)]
-    infos = sorted([get_info(s) for s in srcs], key=lambda i: i["ctime"], reverse=True)
+    src_paths = [f for f in has_dir if is_md(f)]
+    with_metadata = sorted(
+        [get_file_metadata(s) for s in src_paths],
+        key=lambda i: i["ctime"],
+        reverse=True
+    )
 
-    print("Found posts:\n\n{}\n".format("\n".join(i["basename"] for i in infos)))
-    index_html = make_index(infos, template)
+    print("Found posts:\n\n{}\n".format("\n".join(i["basename"] for i in with_metadata)))
+    index_html = make_index(with_metadata, post_template)
     index_path =os.path.join(out_dir, "index.html")
     print("Writing index to {}...".format(index_path))
     with open(index_path, "w") as f:
         f.write(index_html)
 
-    atom_xml = make_feed(infos, entry_template, feed_template)
+    atom_xml = make_feed(with_metadata, entry_template, feed_template)
     feed_path = os.path.join(out_dir, "feed", "atom_feed.xml")
     print("Writing feed to {}...".format(feed_path))
     with open(feed_path, "w") as f:
         f.write(atom_xml)
-    for info in infos:
-            html = render(info["md"], template)
+    for info in with_metadata:
+            html = render(info["md"], post_template)
 
             out_file = os.path.join(out_dir, "{}.html".format(info["basename"]))
             print("Writing to {}...".format(out_file))
@@ -113,8 +106,8 @@ def regenerate_all(src_dir="src/posts", out_dir="blog", template_fp="template.ht
 
 def argparser():
     parser = argparse.ArgumentParser(description="Slot Markdown into some HTML.")
-    parser.add_argument("-s", "--source")
-    parser.add_argument("--template", default="template.html")
+    parser.add_argument("-s", "--source", default="src/posts")
+    parser.add_argument("--template", default="templates/post_template.html")
     parser.add_argument("-a", "--all", action="store_true")
 
     return parser
@@ -123,8 +116,22 @@ def argparser():
 if __name__ == "__main__":
     parser = argparser()
     args = parser.parse_args()
+
+    with open(args.template) as f:
+        post_template = f.read()
+    with open("templates/atom_feed.xml") as f:
+        feed_template = f.read()
+    with open("templates/atom_entry.xml") as f:
+        entry_template = f.read()
+
     if args.all:
-        regenerate_all()
+        regenerate_all(
+            args.source,
+            "blog",
+            post_template,
+            feed_template,
+            entry_template
+        )
     else:
         rendered = render(args.source, args.template)
         sys.stdout.write(rendered)
