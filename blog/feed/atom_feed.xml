@@ -3,7 +3,7 @@
 
   <title>DAZ.ZONE</title>
   <link href="http://www.daz.zone/blog"/>
-  <updated>2018-10-23T12:59:39</updated>
+  <updated>2018-11-06T10:48:42</updated>
   <author>
     <name>Dazhong Xia</name>
   </author>
@@ -11,6 +11,14 @@
   <subtitle>DAZ dot ZONE</subtitle>
 
   <entry>
+  <title>TLA+: Maybe I would have sent fewer panicked messages to my PM</title>
+  <link href="http://www.daz.zone/blog/practical-tla.html"/>
+  <id>md5:959eea1bb7444704e1755b17f0a3cbe0</id>
+  <updated>2018-11-06T10:48:32</updated>
+  <summary>When I was applying to RC I didn't know what I really wanted to work on. My friend Hillel kept going on about this "TLA+" thing, though,...</summary>
+</entry>
+
+<entry>
   <title>Rolling your own static site generator</title>
   <link href="http://www.daz.zone/blog/generate.html"/>
   <id>md5:192b534505ea409a01186373a20241ca</id>

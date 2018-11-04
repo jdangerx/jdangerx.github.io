@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <title>TLA+: Maybe I would have sent fewer panicked messages to my PM</title>
+  <link rel="stylesheet" type="text/css" href="/static/blog.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js"></script>
+  <script type="text/javascript" src="/static/blog.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="content">
+        <script>
+          // if we have JS then hide until we can render markdown to avoid flashing
+          document.getElementById("content").style = "display: none";
+        </script>
+        <pre id="md-src"># TLA+: Maybe I would have sent fewer panicked messages to my PM
+
+When I was applying to RC I didn't know what I really wanted to work on. My
+friend Hillel kept going on about this "TLA+" thing, though, so I decided to
+learn about it. Now I know what it is!
+
+I've been describing it briefly as a tool that finds weird ambiguities and
+states that you overlooked when you were designing your system. The classic
+use-case is reasoning through complicated distributed systems - the major
+industry application I've heard of is in orchestrating service architectures.
+
+This sounded pretty helpful, so I decided to start off RC with it. I
+started working through Hillel's book, [Practical TLA+](https://www.apress.com/us/book/9781484238288).
+
+After getting through the first half of the book I decided to start
+using it for real. But I kind of got stuck: I wasn't really doing hard
+distributed stuff, and I didn't see how to use it in the simpler
+projects I was actually doing. So I went back to the book.
+
+Fortunately the rest of the book was all about "real life"
+applications. By the end of the book, I'd learned a lot, and even got
+to pretend to design MapReduce. 
+
+Which brings me to the big question: I'm not likely to be building a
+fancy distributed system, so will this be useful for me ever?
+
+## Yes
+
+Yes. Here's an example. Due to poor behavior on my part, this scenario
+played out pretty frequently at my old job:
+
+1. Our team decides to build a feature.
+   
+2. Our responsible and professional product manager asks me, the
+   engineer who owns the implementation, what I think about the
+   various product requirements.
+
+3. I read the product requirements and they make sense to me. I say,
+   "sounds good."
+
+4. ...
+
+5. I push to production, realize that I had forgotten to think about
+   the product implications of a specific edge case, and now users are
+   seeing some nonsense or, like, planning violent overthrow of the
+   government or something.
+
+6. I send my PM a slack message asking her how to handle that edge
+   case but she's in meetings for the next week so civil society
+   collapses.
+   
+Oops! Then I went to RC to think about the consequences of my actions.
+   
+While at RC, I was working through an example in the book: modeling "a
+library where people can check out, reserve, and return books, where
+people eventually get to read the books they want to."
+
+As I worked through the design of the system, I started running into
+the ambiguities and contradictions embedded in that sentence: what
+does "get to read" mean? How does a reservation work? What's a book?
+And a lightbulb went off in my head: if I had done this with the
+product requirements at my old job, I could have avoided a lot of
+pain, even though I wasn't building fancy distributed systems.
+
+And as I was modeling the users as separate processes in the library
+system, I had a thought: in a weird dehumanizing way, any system with
+user interactions is a distributed system. So, yes, I expect to use
+TLA+ for "normal feature code" in the future. And also, yes, "normal
+feature code" is part of a "weird distributed system" so of course
+TLA+ will be useful.
+
+Maybe ask my PM if this all works out once I get a real job.
+</pre>
+      </div>
+      <a href="/blog">archive</a>
+    </div>
+  </body>
+</html>
