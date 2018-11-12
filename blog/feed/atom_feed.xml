@@ -3,7 +3,7 @@
 
   <title>DAZ.ZONE</title>
   <link href="http://www.daz.zone/blog"/>
-  <updated>2018-11-06T10:48:42</updated>
+  <updated>2018-11-12T14:46:27</updated>
   <author>
     <name>Dazhong Xia</name>
   </author>
@@ -11,6 +11,14 @@
   <subtitle>DAZ dot ZONE</subtitle>
 
   <entry>
+  <title>Closing Time</title>
+  <link href="http://www.daz.zone/blog/closing-time.html"/>
+  <id>md5:608cf18d33bde75c02f3985bac23fd18</id>
+  <updated>2018-11-12T14:46:16</updated>
+  <summary>At my last job I worked on an online marketplace. It was a big deal if the site went down, even for a few minutes in the middle of the...</summary>
+</entry>
+
+<entry>
   <title>TLA+: Maybe I would have sent fewer panicked messages to my PM</title>
   <link href="http://www.daz.zone/blog/practical-tla.html"/>
   <id>md5:959eea1bb7444704e1755b17f0a3cbe0</id>
